@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FAQ</title>
+  </head>
+  <body>
+    <h1>FAQ in JS</h1>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title">
+          What is the difference between let and var in JavaScript?
+        </h3>
+        <p class="faq-text">
+          The main difference between var and let is the scope in which they are
+          defined. Variables declared with var are function-scoped, which means
+          they are only accessible within the function they were declared in, or
+          globally if they were declared outside of a function. On the other
+          hand, variables declared with let are block-scoped, which means they
+          are only accessible within the block they were declared in. Another
+          difference between var and let is hoisting. Variables declared with
+          var are hoisted to the top of the scope and are initialized with the
+          value undefined. This means that you can access a variable declared
+          with var before it is actually defined in the code. On the other hand,
+          variables declared with let are not hoisted and will throw a
+          ReferenceError if you try to access them before they are defined.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          What is the difference between == and === in JavaScript?
+        </h3>
+        <p class="faq-text">
+          In JavaScript, == and === are comparison operators that are used to
+          compare values for equality. However, they behave slightly differently
+          when comparing values. == is known as the equality operator and will
+          perform type coercion if necessary. This means that if you compare
+          values of different types, JavaScript will attempt to convert one of
+          the values to match the type of the other value before making the
+          comparison. On the other hand, === is known as the strict equality
+          operator, which compares both the value and the type of the two
+          operands. This means that if you compare values of different types,
+          the comparison will always return false. In general, it is recommended
+          to use === for equality comparisons, because it can prevent unexpected
+          behavior due to type coercion.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          How to implement hoisting concept in javascript?
+        </h3>
+        <p class="faq-text">
+          In JavaScript, hoisting is the behavior of moving variable and
+          function declarations to the top of the scope before the code is
+          executed. This means that variables and functions declared with the
+          var keyword are processed before any code is executed, and are
+          therefore accessible throughout the entire scope.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
