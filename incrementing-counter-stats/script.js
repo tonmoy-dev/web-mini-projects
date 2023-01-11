@@ -14,7 +14,7 @@ counters.forEach((counter) => {
     const prevCounter = +counter.innerText;
 
     // the incrementor
-    const increment = target / 10;
+    const increment = target / 200;
 
     if (prevCounter < target) {
       //  if target is bigger than the prevCounter, counter will be updated
